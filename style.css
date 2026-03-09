@@ -44,7 +44,11 @@ hr {
     background-color: var(--purple-100);
 }
 
-.faq {}
+.faq.open {
+    > .a {
+        height: auto;
+    }
+}
 
 .q {
     display: flex;
@@ -59,9 +63,6 @@ hr {
     overflow: hidden;
 }
 
-.a.open {
-    height: auto;
-}
 
 .attribution {
     font-size: 0.5rem;
