@@ -12,6 +12,9 @@ body {
     background-color: var(--purple-100);
     /* background-image: url(); */
     font-family: "Work Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .card {
@@ -44,10 +47,17 @@ hr {
     background-color: var(--purple-100);
 }
 
+.faq {
+    display: grid;
+    grid-template-rows: auto 0fr;
+    transition: grid-template-rows 350ms ease-in-out;
+}
+
 .faq.open {
-    > .a {
+    /* > .a {
         height: auto;
-    }
+    } */
+    grid-template-rows: auto 1fr;
 }
 
 .q {
@@ -58,8 +68,6 @@ hr {
 }
 
 .a {
-    height: 0;
-    transition: all 2s ease-in-out;
     overflow: hidden;
 }
 
@@ -68,4 +76,5 @@ hr {
     font-size: 0.5rem;
     color: var(--purple-600);
     padding: 1rem;
+    margin-top: auto;
 }
